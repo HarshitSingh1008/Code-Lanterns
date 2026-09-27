@@ -1,0 +1,61 @@
+.dashboard { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.dash-header { display: flex; align-items: center; justify-content: space-between; }
+.dash-greeting { display: flex; align-items: center; gap: 12px; }
+.dash-avatar { width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #f59e0b, #d97706); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #003731; }
+.dash-greeting h1 { font-size: 18px; font-weight: 700; }
+.dash-greeting p { font-size: 12px; color: var(--text2); }
+.dash-actions { display: flex; gap: 8px; }
+.icon-btn { width: 40px; height: 40px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text2); cursor: pointer; display: flex; align-items: center; justify-content: center; position: relative; }
+.notif-badge { position: absolute; top: -4px; right: -4px; width: 16px; height: 16px; border-radius: 50%; background: #ef4444; font-size: 9px; font-weight: 700; display: flex; align-items: center; justify-content: center; color: white; }
+.notifications-dropdown { position: absolute; top: 70px; right: 20px; width: 280px; padding: 16px; border-radius: var(--radius); z-index: 50; }
+.notifications-dropdown h3 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.notif-item { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text2); }
+.notif-item:last-child { border-bottom: none; }
+.quick-ask { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: var(--radius-full); color: var(--text3); font-size: 14px; cursor: pointer; border: 1px solid var(--border); }
+.family-row h2 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text2); }
+.family-scroll { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; }
+.family-member { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 70px; }
+.member-avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; border: 2px solid; position: relative; }
+.online-dot { position: absolute; bottom: 2px; right: 2px; width: 10px; height: 10px; border-radius: 50%; background: #34d399; border: 2px solid var(--bg); }
+.member-name { font-size: 12px; font-weight: 600; }
+.member-status { font-size: 10px; color: var(--text3); }
+.quick-actions { display: flex; gap: 10px; }
+.qa-btn { flex: 1; padding: 12px 8px; border-radius: var(--radius-sm); border: 1px solid var(--border); font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; color: var(--text); background: rgba(19, 27, 46, 0.6); }
+.qa-btn span { font-size: 16px; color: var(--teal); }
+.qa-ai { color: var(--teal); }
+.qa-sos { color: #ef4444; }
+.widget { border-radius: var(--radius); padding: 16px; }
+.widget-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.widget-header h3 { font-size: 14px; font-weight: 600; }
+.health-quick { display: flex; flex-direction: column; gap: 8px; }
+.health-quick-item { display: flex; justify-content: space-between; padding: 8px 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); }
+.health-quick-item strong { font-size: 13px; }
+.health-quick-item span { font-size: 12px; color: var(--text2); }
+.budget-info { margin-bottom: 12px; }
+.budget-numbers { display: flex; align-items: baseline; gap: 6px; margin-bottom: 8px; }
+.budget-spent { font-size: 20px; font-weight: 700; color: var(--teal); }
+.budget-total { font-size: 13px; color: var(--text3); }
+.budget-bar { height: 6px; background: var(--surface3); border-radius: 3px; overflow: hidden; margin-bottom: 6px; }
+.budget-fill { height: 100%; background: linear-gradient(90deg, #14b8a6, #059669); border-radius: 3px; transition: width 0.5s ease; }
+.budget-percent { font-size: 11px; color: var(--text3); }
+.task-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+.task-item:last-child { border-bottom: none; }
+.task-check { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--border2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s; }
+.task-item.done .task-check { background: #14b8a6; border-color: #14b8a6; }
+.task-info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.task-title { font-size: 13px; font-weight: 500; text-decoration: none; }
+.task-item.done .task-title { text-decoration: line-through; color: var(--text3); }
+.task-assignee { font-size: 11px; color: var(--text3); }
+.event-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.event-item:last-child { border-bottom: none; }
+.event-date { display: flex; flex-direction: column; align-items: center; min-width: 50px; padding: 6px; background: rgba(20,184,166,0.08); border-radius: var(--radius-sm); }
+.event-day { font-size: 10px; font-weight: 700; color: var(--teal); text-transform: uppercase; }
+.event-time { font-size: 11px; color: var(--text2); }
+.event-title { font-size: 13px; font-weight: 500; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.modal { width: 100%; max-width: 400px; padding: 24px; border-radius: var(--radius); }
+.sos-modal h3 { color: #ef4444; }
+.sos-modal p { font-size: 14px; color: var(--text2); margin: 8px 0 16px; }
+.modal-actions { display: flex; gap: 10px; margin-top: 8px; }
+.modal-cancel { flex: 1; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: transparent; color: var(--text); font-family: inherit; font-size: 14px; cursor: pointer; }
+.modal-save { flex: 1; padding: 12px; border-radius: var(--radius-sm); border: none; background: var(--teal); color: #003731; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }

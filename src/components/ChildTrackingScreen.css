@@ -1,0 +1,24 @@
+.tracking-screen { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.tracking-header h1 { font-size: 22px; font-weight: 700; }
+.tracking-header p { font-size: 13px; color: var(--text2); }
+.tracking-list { display: flex; flex-direction: column; gap: 10px; }
+.tracking-card { border-radius: var(--radius); padding: 16px; }
+.tracking-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.tracking-avatar { width: 44px; height: 44px; border-radius: 12px; background: rgba(20,184,166,0.15); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: var(--teal); }
+.tracking-info { flex: 1; }
+.tracking-info h3 { font-size: 16px; font-weight: 600; }
+.tracking-status { font-size: 12px; font-weight: 600; }
+.tracking-status.safe { color: #34d399; }
+.tracking-battery { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text2); }
+.tracking-location { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); margin-bottom: 12px; }
+.location-name { font-size: 14px; font-weight: 500; display: block; }
+.location-time { font-size: 11px; color: var(--text3); }
+.tracking-actions { display: flex; gap: 8px; }
+.tracking-btn { flex: 1; padding: 10px; border-radius: var(--radius-sm); border: none; background: var(--teal); color: #003731; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.tracking-btn.secondary { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); }
+.safety-features { border-radius: var(--radius); padding: 16px; }
+.safety-features h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+.safety-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.safety-item:last-child { border-bottom: none; }
+.safety-item span { font-size: 13px; font-weight: 500; display: block; }
+.safety-item small { font-size: 11px; color: var(--text3); }

@@ -1,0 +1,57 @@
+.health-screen { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.health-header h1 { font-size: 22px; font-weight: 700; }
+.health-header p { font-size: 13px; color: var(--text2); }
+.health-tabs { display: flex; gap: 8px; }
+.health-tabs button { flex: 1; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: rgba(19,27,46,0.6); font-family: inherit; font-size: 13px; color: var(--text2); cursor: pointer; }
+.health-tabs button.active { background: rgba(20,184,166,0.15); border-color: var(--teal); color: var(--teal); }
+.health-summary { display: flex; gap: 12px; padding: 16px; border-radius: var(--radius); }
+.health-stat { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); }
+.stat-value { font-size: 24px; font-weight: 700; color: var(--teal); }
+.stat-label { font-size: 11px; color: var(--text3); }
+.health-list { display: flex; flex-direction: column; gap: 8px; }
+.health-item { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: var(--radius-sm); }
+.health-info { display: flex; flex-direction: column; gap: 2px; }
+.health-info strong { font-size: 13px; }
+.health-info span { font-size: 12px; color: var(--text2); }
+.health-status { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-full); text-transform: uppercase; }
+.health-status.taken { background: rgba(52,211,153,0.15); color: #34d399; }
+.health-status.normal { background: rgba(20,184,166,0.15); color: #14b8a6; }
+.health-status.active { background: rgba(99,102,241,0.15); color: #818cf8; }
+.health-status.due-soon { background: rgba(245,158,11,0.15); color: #f59e0b; }
+.prescriptions-list { display: flex; flex-direction: column; gap: 10px; }
+.prescription-card { border-radius: var(--radius); padding: 16px; }
+.prescription-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.prescription-header h3 { font-size: 16px; font-weight: 600; }
+.prescription-member { font-size: 12px; color: var(--text2); }
+.prescription-status { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-full); text-transform: uppercase; }
+.prescription-status.active { background: rgba(52,211,153,0.15); color: #34d399; }
+.prescription-details { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.prescription-details div { display: flex; flex-direction: column; }
+.prescription-details span { font-size: 11px; color: var(--text3); }
+.prescription-details strong { font-size: 13px; }
+.doctor-section { display: flex; flex-direction: column; gap: 12px; }
+.doctor-card { display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: var(--radius); }
+.doctor-avatar { width: 50px; height: 50px; border-radius: 14px; background: rgba(236,72,153,0.15); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #ec4899; }
+.doctor-info { flex: 1; }
+.doctor-info h3 { font-size: 16px; font-weight: 600; }
+.doctor-info p { font-size: 12px; color: var(--text2); }
+.doctor-status { font-size: 11px; color: #34d399; }
+.doctor-chat-btn { padding: 8px 16px; border-radius: var(--radius-full); border: none; background: var(--teal); color: #003731; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.doctor-access { padding: 16px; border-radius: var(--radius); }
+.doctor-access h4 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.doctor-access ul { list-style: none; }
+.doctor-access li { font-size: 13px; color: var(--text2); padding: 4px 0; padding-left: 16px; position: relative; }
+.doctor-access li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.modal { width: 100%; max-width: 400px; padding: 24px; border-radius: var(--radius); }
+.doctor-chat { display: flex; flex-direction: column; height: 500px; }
+.doctor-chat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.doctor-chat-header h3 { font-size: 16px; }
+.doctor-chat-header button { background: none; border: none; color: var(--text2); cursor: pointer; font-family: inherit; }
+.doctor-messages { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.doctor-msg { padding: 10px 14px; border-radius: 12px; font-size: 13px; max-width: 80%; }
+.doctor-msg.doctor { background: rgba(236,72,153,0.1); align-self: flex-start; }
+.doctor-msg.user { background: rgba(20,184,166,0.15); align-self: flex-end; }
+.doctor-input { display: flex; gap: 8px; }
+.doctor-input input { flex: 1; padding: 10px 14px; border-radius: var(--radius-full); border: 1px solid var(--border); background: rgba(19,27,46,0.6); color: var(--text); font-family: inherit; font-size: 13px; outline: none; }
+.doctor-input button { padding: 10px 16px; border-radius: var(--radius-full); border: none; background: var(--teal); color: #003731; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }

@@ -1,0 +1,17 @@
+.notifications-screen { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.notif-header h1 { font-size: 22px; font-weight: 700; }
+.notif-header p { font-size: 13px; color: var(--text2); }
+.notif-list { display: flex; flex-direction: column; gap: 8px; }
+.notif-card { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border-radius: var(--radius); cursor: pointer; transition: all 0.2s; }
+.notif-card.unread { border-left: 3px solid var(--teal); }
+.notif-card.read { opacity: 0.7; }
+.notif-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.notif-icon.type-task { background: rgba(20,184,166,0.1); }
+.notif-icon.type-health { background: rgba(236,72,153,0.1); }
+.notif-icon.type-finance { background: rgba(245,158,11,0.1); }
+.notif-icon.type-memory { background: rgba(99,102,241,0.1); }
+.notif-content { flex: 1; }
+.notif-content strong { font-size: 14px; font-weight: 600; }
+.notif-content p { font-size: 13px; color: var(--text2); margin: 4px 0; }
+.notif-time { font-size: 11px; color: var(--text3); }
+.notif-unread-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); margin-top: 6px; }
