@@ -1,80 +1,70 @@
-/** Fixed font faces, mapped from the Stitch "Nexus Bubbles" design system. */
-export const FONTS = {
-  quicksand: {
-    medium: 'Quicksand_500Medium',
-    semibold: 'Quicksand_600SemiBold',
-    bold: 'Quicksand_700Bold',
-  },
-  nunito: {
-    regular: 'NunitoSans_400Regular',
-    medium: 'NunitoSans_500Medium',
-    semibold: 'NunitoSans_600SemiBold',
-    bold: 'NunitoSans_700Bold',
-  },
-} as const;
-
-export const MONO = 'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
-
-export const SPACING = {
-  xxs: 4,
-  xs: 8,
-  sm: 12,
+export const spacing = {
+  xs: 4,
+  sm: 8,
   md: 16,
-  lg: 20,
-  xl: 28,
-  xxl: 36,
-  gutter: 20,
-} as const;
-
-export const RADIUS = {
-  sm: 12,
-  md: 18,
   lg: 24,
   xl: 32,
-  pill: 999,
+  xxl: 48,
 } as const;
 
-/** Font sizes before the Elder Mode multiplier is applied. */
-export const TYPE = {
-  displayLg: { size: 32, line: 38, font: FONTS.quicksand.bold, tracking: -0.6 },
-  displaySm: { size: 26, line: 32, font: FONTS.quicksand.bold, tracking: -0.4 },
-  headline: { size: 21, line: 28, font: FONTS.quicksand.bold, tracking: -0.2 },
-  title: { size: 17, line: 23, font: FONTS.quicksand.semibold },
-  label: { size: 15, line: 20, font: FONTS.quicksand.semibold },
-  labelSm: { size: 12, line: 16, font: FONTS.quicksand.semibold, tracking: 0.3 },
-  labelXs: { size: 10, line: 14, font: FONTS.quicksand.bold, tracking: 0.7 },
-  body: { size: 15, line: 22, font: FONTS.nunito.regular },
-  bodySm: { size: 13, line: 19, font: FONTS.nunito.regular },
-  bodySmMedium: { size: 13, line: 19, font: FONTS.nunito.semibold },
-  caption: { size: 12, line: 16, font: FONTS.nunito.regular },
+export const roundness = {
+  sm: 4,
+  DEFAULT: 8,
+  md: 12,
+  lg: 16,
+  xl: 24,
+  full: 9999,
 } as const;
 
-export type TypeToken = keyof typeof TYPE;
-
-/** Elder Mode floor: nothing renders below 19px and line heights open up. */
-export const ELDER_SCALE: Record<TypeToken, number> = {
-  displayLg: 1.18,
-  displaySm: 1.24,
-  headline: 1.28,
-  title: 1.26,
-  label: 1.24,
-  labelSm: 1.3,
-  labelXs: 1.25,
-  body: 1.36,
-  bodySm: 1.38,
-  bodySmMedium: 1.34,
-  caption: 1.34,
-};
-
-export const MOTION = {
-  fast: 160,
-  base: 220,
-  slow: 320,
+export const typography = {
+  displayLg: { fontSize: 48, fontWeight: '700' as const, lineHeight: 56 },
+  headlineLg: { fontSize: 30, fontWeight: '600' as const, lineHeight: 38 },
+  headlineMd: { fontSize: 22, fontWeight: '600' as const, lineHeight: 30 },
+  titleLg: { fontSize: 20, fontWeight: '600' as const, lineHeight: 26 },
+  titleMd: { fontSize: 16, fontWeight: '600' as const, lineHeight: 22 },
+  bodyLg: { fontSize: 16, fontWeight: '400' as const, lineHeight: 24 },
+  bodyMd: { fontSize: 14, fontWeight: '400' as const, lineHeight: 20 },
+  bodySm: { fontSize: 12, fontWeight: '400' as const, lineHeight: 16 },
+  labelLg: { fontSize: 14, fontWeight: '600' as const, lineHeight: 20 },
+  labelMd: { fontSize: 12, fontWeight: '500' as const, lineHeight: 16 },
+  labelSm: { fontSize: 11, fontWeight: '500' as const, lineHeight: 14 },
+  grandparentTitle: { fontSize: 26, fontWeight: '700' as const, lineHeight: 34 },
+  grandparentBody: { fontSize: 20, fontWeight: '500' as const, lineHeight: 30 },
+  grandparentAction: { fontSize: 18, fontWeight: '700' as const, lineHeight: 24 },
 } as const;
 
-export const LAYOUT = {
-  /** Keeps the web build reading as a phone app on wide screens. */
-  maxContentWidth: 520,
-  tabBarHeight: 84,
-  appBarHeight: 56,
+export const baseColors = {
+  surface: '#f8f9fa',
+  surfaceDim: '#d9dadb',
+  surfaceBright: '#f8f9fa',
+  surfaceContainerLowest: '#ffffff',
+  surfaceContainerLow: '#f3f4f5',
+  surfaceContainer: '#edeeef',
+  surfaceContainerHigh: '#e7e8e9',
+  surfaceContainerHighest: '#e1e3e4',
+  onSurface: '#191c1d',
+  onSurfaceVariant: '#41474d',
+  inverseSurface: '#2e3132',
+  inverseOnSurface: '#f0f1f2',
+  outline: '#72787e',
+  outlineVariant: '#c1c7ce',
+  primary: '#235370',
+  onPrimary: '#ffffff',
+  primaryContainer: '#3e6b89',
+  onPrimaryContainer: '#cee9ff',
+  inversePrimary: '#9fccee',
+  secondary: '#95482e',
+  onSecondary: '#ffffff',
+  secondaryContainer: '#ff9d7d',
+  onSecondaryContainer: '#78321a',
+  tertiary: '#2e5644',
+  onTertiary: '#ffffff',
+  tertiaryContainer: '#466f5b',
+  onTertiaryContainer: '#c3f0d7',
+  error: '#ba1a1a',
+  onError: '#ffffff',
+  errorContainer: '#ffdad6',
+  onErrorContainer: '#93000a',
+  background: '#f8f9fa',
+  onBackground: '#191c1d',
 } as const;

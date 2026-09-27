@@ -1,58 +1,31 @@
 {
   "expo": {
-    "name": "Family Nexus AI",
-    "slug": "family-nexus-ai",
-    "description": "A private, local-first family assistant that knows the household without ever sending it anywhere.",
+    "name": "FamilyHub",
+    "slug": "family-hub",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "familynexus",
-    "userInterfaceStyle": "automatic",
-    "primaryColor": "#6C7CE4",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3e6b89"
+    },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "icon": "./assets/images/icon.png",
-      "bundleIdentifier": "ai.familynexus.app",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.familyhub.app"
     },
     "android": {
-      "package": "ai.familynexus.app",
       "adaptiveIcon": {
-        "backgroundColor": "#F4F3FB",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3e6b89"
       },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png",
-      "bundler": "metro",
-      "name": "Family Nexus AI",
-      "shortName": "Nexus",
-      "lang": "en",
-      "themeColor": "#6C7CE4",
-      "backgroundColor": "#F4F3FB",
-      "description": "A private, local-first family assistant that knows the household without ever sending it anywhere.",
-      "display": "standalone"
+      "package": "com.familyhub.app"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#F4F3FB",
-          "dark": {
-            "backgroundColor": "#12131F"
-          },
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 132
-        }
-      ]
+      "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
+    "scheme": "familyhub"
   }
 }
